@@ -115,7 +115,7 @@ First select your device type. The available products will then be shown.
                 bot.send_photo(
                     call.message.chat.id, 
                     photo=qr_photo, 
-                    caption="🇮🇳 India Post Payments Bank\nUPI ID: '9677606117@postbank' \nName: IEJAZ\n\nScan this QR code and make payment!"
+                    caption="🇮🇳 India Post Payments Bank\nUPI ID: "9677606117" \nName: IEJAZ\n\nScan this QR code and make payment!"
                 )
         except FileNotFoundError:
             bot.send_message(call.message.chat.id, "⚠️ QR Image file 'UPI_QR.png' not found in project folder!")
