@@ -27,7 +27,7 @@ def send_welcome(message):
     current_balance = user_balances[user_id]
     
     welcome_text = f"""
-🛒 - 🌐 𝑰𝑑𝑴 𝑨𝑼𝑑𝑨 𝑺𝑻𝑶𝑑𝑬 🛍️ - 🛒
+🛒 - 🌐 𝑰r𝑴 𝑨𝑼𝑑𝑨 𝑺𝑻𝑶𝑑𝑬 🛍️ - 🛒
 
   Welcome, - ⚡ {first_name}!
 
@@ -70,7 +70,7 @@ First select your device type. The available products will then be shown.
         
     elif call.data == "back_to_main":
         welcome_text = f"""
-🛒 - 🌐 𝑰𝑑𝑴 𝑨𝑼𝑑𝑨 𝑺𝑻𝑶𝑑𝑬 🛍️ - 🛒
+🛒 - 🌐 𝑰r𝑴 𝑨𝑼𝑑𝑨 𝑺𝑻𝑶𝑑𝑬 🛍️ - 🛒
 
   Welcome, - ⚡ {user_name}!
 
@@ -118,7 +118,7 @@ First select your device type. The available products will then be shown.
                     caption="🇮🇳 India Post Payments Bank\nUPI ID: 9677606117@postbank\nName: IEJAZ\n\nScan this QR code and make payment!"
                 )
         except FileNotFoundError:
-            bot.send_message(call.message.chat.id, "⚠️ QR Image file '1000090736.png' not found in project folder!")
+            bot.send_message(call.message.chat.id, "⚠️ QR Image file 'UPI_QR.png' not found in project folder!")
 
     elif call.data == "pay_binance":
         bot.answer_callback_query(call.id, "BINANCE PAY Selected")
