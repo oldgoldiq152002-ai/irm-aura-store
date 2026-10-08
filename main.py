@@ -1,7 +1,7 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardRemove
 
-TOKEN = '8820818811:AAFDQcrksykCIbYZIn4MjVKWITYbd5R10R4'
+TOKEN = '8884755347:AAHRdI8D9-YM_BSsv5qeGzED2t5NKLl3EY0'
 bot = telebot.TeleBot(TOKEN)
 
 user_balances = {}
